@@ -1,4 +1,12 @@
-Pour un démarrage rapide, clôner ce repo, `npm install` **puis changer l'adresse remote.**
+Pour un démarrage rapide, clôner ce repo, `npm install` **puis changer l'adresse remote** :
+
+```
+git remote set-url origin https://github.com/pierre-phil/$URLDUNOUVEAUPROJET.git
+git remote -v
+git push
+```
+
+Le starter est utilisé pour le nouveau projet, on peut commencer à bosser.
 
 Ou bien reproduire step by step dans un nouveau repo :
 
