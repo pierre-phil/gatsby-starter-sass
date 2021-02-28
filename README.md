@@ -1,3 +1,10 @@
+Ce starter inclut :
+
+- création site Gatsby avec starter Hello World de base ;
+- installation SASS ;
+- création components SEO, Layout ;
+- quelques variables SASS pour un démarrage rapide
+
 Pour un démarrage rapide, clôner ce repo, `npm install` **puis changer l'adresse remote** :
 
 ```
