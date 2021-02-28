@@ -6,5 +6,10 @@
 
 module.exports = {
   /* Your site config here */
-  plugins: [],
+  siteMetadata: {
+    title: `OZENKAWEB`,
+    siteUrl: `https://ozenkaweb.com`,
+    description: `Nous créons des sites web rapides, solides et évolutifs pour que votre business puisse avoir la croissance qu'il mérite.`,
+  },
+  plugins: [`gatsby-plugin-sass`, `gatsby-plugin-react-helmet`],
 }
