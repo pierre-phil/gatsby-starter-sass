@@ -3,7 +3,8 @@ Ce starter inclut :
 - création site Gatsby avec starter Hello World de base ;
 - installation SASS ;
 - création components SEO, Layout ;
-- quelques variables SASS pour un démarrage rapide
+- installation de quelques polices depuis [fontsource](https://github.com/fontsource/fontsource/tree/master/packages) (`npm uninstall @fontsource/$NOMPOLICE` pour les désinstaller) ;
+- quelques variables SASS et un peu de contenu.
 
 Pour un démarrage rapide, clôner ce repo, `npm install` **puis changer l'adresse remote** :
 
