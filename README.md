@@ -8,8 +8,8 @@ Ce starter inclut :
 Pour un démarrage rapide :
 
 - clôner ce repo ;
-- `npm install`
-- `npm outdated`, si des paquets sont oudated, faire `npm install $nomPaquet@latest --legacy-peer-deps`
+- `npm install` ;
+- `npm outdated`, si des paquets sont oudated, faire `npm install $nomPaquet@latest --legacy-peer-deps` (seulement si vous utilisez `npm 7`, sinon juste `npm install $nomPaquet@latest`) ;
 - puis changer l'adresse remote :
 
 ```
