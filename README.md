@@ -1,12 +1,16 @@
 Ce starter inclut :
 
 - création site Gatsby avec starter Hello World de base ;
-- installation SASS ;
-- création components SEO, Layout ;
-- installation de quelques polices depuis [fontsource](https://github.com/fontsource/fontsource/tree/master/packages) (`npm uninstall @fontsource/$NOMPOLICE` pour les désinstaller) ;
-- quelques variables SASS et un peu de contenu.
+- Gatsby plugin SASS ;
+- Gatsby plugin image ;
+- création components SEO, Layout, Titles, fichier variables SCSS ....
 
-Pour un démarrage rapide, clôner ce repo, `npm install` **puis changer l'adresse remote** :
+Pour un démarrage rapide :
+
+- clôner ce repo ;
+- `npm install`
+- `npm outdated`, si des paquets sont oudated, faire `npm install $nomPaquet@latest --legacy-peer-deps`
+- puis changer l'adresse remote :
 
 ```
 git remote set-url origin https://github.com/pierre-phil/$URLDUNOUVEAUPROJET.git
@@ -14,11 +18,7 @@ git remote -v
 git push
 ```
 
-Le starter est utilisé pour le nouveau projet, on peut commencer à bosser.
-
 Ou bien reproduire step by step dans un nouveau repo :
-
-### config
 
 - Créer un nouveau site Gatsby en utilisant le starter Hello World :
 
@@ -31,6 +31,12 @@ Ou bien reproduire step by step dans un nouveau repo :
   `npm install sass gatsby-plugin-sass`
 
   [doc](https://www.gatsbyjs.com/docs/how-to/styling/sass/)
+
+- Installer le plugin Gatsby image :
+
+  `npm install gatsby-plugin-image gatsby-plugin-sharp gatsby-source-filesystem gatsby-transformer-sharp`
+
+  [doc](https://www.gatsbyjs.com/docs/how-to/images-and-media/using-gatsby-plugin-image/)
 
 - Installer les polices au choix :
 

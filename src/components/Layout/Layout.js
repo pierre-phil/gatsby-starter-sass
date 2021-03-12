@@ -1,7 +1,6 @@
 import React from "react"
 
-import "@fontsource/oswald" // Defaults to weight 400.
-import "@fontsource/roboto" // Defaults to weight 400.
+// import "@fontsource/oswald" // This is not installed
 
 import "./layout.scss"
 
