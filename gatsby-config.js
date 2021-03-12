@@ -11,5 +11,5 @@ module.exports = {
     siteUrl: `https://votresite.com`,
     description: `blabli-blablou`,
   },
-  plugins: [`gatsby-plugin-sass`, `gatsby-plugin-react-helmet`],
+  plugins: [`gatsby-plugin-sass`, `gatsby-plugin-react-helmet`, `gatsby-plugin-image`, `gatsby-plugin-sharp`, `gatsby-transformer-sharp`,],
 }
