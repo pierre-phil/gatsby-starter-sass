@@ -3,13 +3,13 @@ Ce starter inclut :
 - création site Gatsby avec starter Hello World de base ;
 - Gatsby plugin SASS ;
 - Gatsby plugin image ;
-- création components SEO, Layout, Titles, fichier variables SCSS ....
+- création components SEO, Layout, Titles, fichier $variables SCSS ....
 
 Pour un démarrage rapide :
 
 - clôner ce repo ;
 - `npm install` ;
-- `npm outdated`, si des paquets sont oudated, faire `npm install $nomPaquet@latest --legacy-peer-deps` (seulement si vous utilisez `npm 7`, sinon juste `npm install $nomPaquet@latest`) ;
+- `npm outdated`, si des paquets sont outdated, faire `npm install $nomPaquet@latest --legacy-peer-deps` (seulement si vous utilisez `npm 7`, sinon juste `npm install $nomPaquet@latest`) ;
 - puis changer l'adresse remote :
 
 ```
@@ -18,7 +18,7 @@ git remote -v
 git push
 ```
 
-Ou bien reproduire step by step dans un nouveau repo :
+Étapes exécutées dans ce repo :
 
 - Créer un nouveau site Gatsby en utilisant le starter Hello World :
 
@@ -38,10 +38,21 @@ Ou bien reproduire step by step dans un nouveau repo :
 
   [doc](https://www.gatsbyjs.com/docs/how-to/images-and-media/using-gatsby-plugin-image/)
 
-- Installer les polices au choix :
+- À ce stade votre `gatsby-config.js` devrait ressembler à :
+
+```
+ plugins: [
+    `gatsby-plugin-sass`,
+    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-image`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
+  ],
+```
+
+- (non fait) Installer les polices au choix :
 
   `npm install @fontsource/$NOMDELAFONT`
 
   [doc](https://github.com/fontsource/fontsource/tree/master/packages)
 
-Puis configurer `gatsby-config` comme dans ce repo, les fonts, les variables etc.
