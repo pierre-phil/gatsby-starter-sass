@@ -7,9 +7,20 @@ Ce starter inclut :
 
 Pour un démarrage rapide :
 
-- clôner ce repo ;
+- `git clone https://github.com/pierre-phil/gatsby-starter-sass.git` ;
 - `npm install` ;
 - `npm outdated`, si des paquets sont outdated, faire `npm install $nomPaquet@latest --legacy-peer-deps` (seulement si vous utilisez `npm 7`, sinon juste `npm install $nomPaquet@latest`) ;
+- Dans votre `gatsby-config.js` :
+
+```
+ plugins: [
+    `gatsby-plugin-sass`,
+    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-image`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
+  ],
+```
 - puis changer l'adresse remote :
 
 ```
@@ -37,18 +48,6 @@ git push
   `npm install gatsby-plugin-image gatsby-plugin-sharp gatsby-source-filesystem gatsby-transformer-sharp`
 
   [doc](https://www.gatsbyjs.com/docs/how-to/images-and-media/using-gatsby-plugin-image/)
-
-- À ce stade votre `gatsby-config.js` devrait ressembler à :
-
-```
- plugins: [
-    `gatsby-plugin-sass`,
-    `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-image`,
-    `gatsby-plugin-sharp`,
-    `gatsby-transformer-sharp`,
-  ],
-```
 
 - (non fait) Installer les polices au choix :
 
