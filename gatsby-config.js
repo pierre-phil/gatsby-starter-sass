@@ -25,5 +25,18 @@ module.exports = {
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
+    {
+      // https://www.gatsbyjs.com/plugins/gatsby-plugin-manifest/#gatsby-plugin-manifest
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        icon: `src/images/dog.jpg`,
+        name: `Pierre Phil's Gatsby starter`,
+        short_name: `Gatsby starter`,
+        start_url: `/`,
+        background_color: `#f7f0eb`,
+        theme_color: `#a2466c`,
+        display: `standalone`,
+      },
+    },
   ],
 }
