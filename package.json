@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-hello-world",
+  "name": "gatsby-starter-sass",
   "private": true,
-  "description": "A simplified bare-bones starter for Gatsby",
-  "version": "0.1.0",
+  "description": "A simple SASS starter for Gatsby to make you save time",
+  "version": "0.1.1",
   "license": "0BSD",
   "scripts": {
     "build": "gatsby build",
@@ -34,9 +34,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-hello-world"
+    "url": "https://github.com/pierre-phil/gatsby-starter-sass"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/pierre-phil/gatsby-starter-sass/issues"
   }
 }
