@@ -7,6 +7,7 @@
 module.exports = {
   /* Your site config here */
   siteMetadata: {
+    // TODO
     title: "Pierre Phil's Gatsby starter",
     titleTemplate: "%s · Gatsby starter",
     description: "This is a default description",
@@ -29,13 +30,25 @@ module.exports = {
       // https://www.gatsbyjs.com/plugins/gatsby-plugin-manifest/#gatsby-plugin-manifest
       resolve: `gatsby-plugin-manifest`,
       options: {
+        // TODO
         icon: `src/images/dog.jpg`,
+        cache_busting_mode: "none",
         name: `Pierre Phil's Gatsby starter`,
         short_name: `Gatsby starter`,
         start_url: `/`,
         background_color: `#f7f0eb`,
         theme_color: `#a2466c`,
         display: `standalone`,
+      },
+    },
+    {
+      // https://www.gatsbyjs.com/plugins/gatsby-plugin-offline/#gatsby-plugin-offline
+      resolve: `gatsby-plugin-offline`,
+      options: {
+        precachePages: [`/index/`],
+        workboxConfig: {
+          globPatterns: [`src/images/dog.jpg`],
+        },
       },
     },
   ],

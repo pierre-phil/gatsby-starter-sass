@@ -4,9 +4,9 @@ import "./titles.scss"
 export default function Title() {
   return (
     <>
-      <h1>STARTER</h1>
-      <h2>Blabli</h2>
-      <h3>Blabla</h3>
+      <h1>Gatsby starter</h1>
+      <h2>by Pierre Phil</h2>
+      <h3>Have fun</h3>
     </>
   )
 }

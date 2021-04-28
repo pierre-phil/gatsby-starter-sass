@@ -1,3 +1,19 @@
+# Utilisation
+
+Clôner ce repo :
+
+`git clone git@github.com:pierre-phil/gatsby-starter-sass.git`
+
+Installer les dépendances :
+
+`npm install`
+
+Changer l'adresse url remote :
+
+`git remote set-url origin $url`
+
+Mettre à jour les dépendances (voir section suivante)
+
 # Mise à jour des packages
 
 Installer le package [`npm-check-updates`](https://www.npmjs.com/package/npm-check-updates) :
@@ -15,7 +31,13 @@ ncu -u
 npm install
 ```
 
-# Installer des polices au choix :
+# TODO
+
+Certaines modifications sont à apporter afin de configurer ce starter (SEO, gatsby-config ...). Celles-ci sont marquées au sein même du code source par un commentaire `// TODO`.
+
+Vous pouvez localiser ces modifications en recherchant le mot-clé `TODO` grâce à une recherche globale (`ctrl maj F`) ou en utilisant une extension comme `Todo Tree` qui les répertorie automatiquement pour vous.
+
+# Installer des polices au choix
 
 Trouvez-la sur [Google Fonts](https://fonts.google.com/), installez-la puis importez-la dans le fichier d'entrée de l'app (ici `layout.js`) :
 
