@@ -1,57 +1,41 @@
-Ce starter inclut :
+# Mise à jour des packages
 
-- création site Gatsby avec starter Hello World de base ;
-- Gatsby plugin SASS ;
-- Gatsby plugin image ;
-- création components SEO, Layout, Titles, fichier $variables SCSS ....
+Installer le package [`npm-check-updates`](https://www.npmjs.com/package/npm-check-updates) :
 
-Pour un démarrage rapide :
+`npm install -g npm-check-updates`
 
-- `git clone https://github.com/pierre-phil/gatsby-starter-sass.git` ;
-- `npm install` ;
-- `npm outdated`, si des paquets sont outdated, faire `npm install $nomPaquet@latest --legacy-peer-deps` (seulement si vous utilisez `npm 7`, sinon juste `npm install $nomPaquet@latest`) ;
-- Dans votre `gatsby-config.js` :
+Vérifier si des mises à jour sont disponibles :
+
+`ncu`
+
+Installer les mises à jour :
 
 ```
- plugins: [
-    `gatsby-plugin-sass`,
-    `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-image`,
-    `gatsby-plugin-sharp`,
-    `gatsby-transformer-sharp`,
-  ],
-```
-- puis changer l'adresse remote :
-
-```
-git remote set-url origin https://github.com/pierre-phil/$URLDUNOUVEAUPROJET.git
-git remote -v
-git push
+ncu -u
+npm install
 ```
 
-Étapes exécutées dans ce repo :
+# Installer des polices au choix :
 
-- Créer un nouveau site Gatsby en utilisant le starter Hello World :
+Trouvez-la sur [Google Fonts](https://fonts.google.com/), installez-la puis importez-la dans le fichier d'entrée de l'app (ici `layout.js`) :
 
-  `gatsby new $NOMDUSITE https://github.com/gatsbyjs/gatsby-starter-hello-world`
+`npm install @fontsource/open-sans`
 
-  [doc](https://www.gatsbyjs.com/docs/tutorial/part-zero/)
+```
+-- layout.js
 
-- Installer SASS :
+import "@fontsource/open-sans" // Defaults to weight 400 with normal variant.
+import "@fontsource/open-sans/500.css" // Weight 500.
+import "@fontsource/open-sans/900-italic.css" // Italic variant.
+```
 
-  `npm install sass gatsby-plugin-sass`
+Les fonts peuvent aussi être importées dans un fichier SCSS :
 
-  [doc](https://www.gatsbyjs.com/docs/how-to/styling/sass/)
+```
+-- variable.scss
 
-- Installer le plugin Gatsby image :
+@import "~@fontsource/open-sans/index.css";
+@import "~@fontsource/open-sans/300-italic.css";
+```
 
-  `npm install gatsby-plugin-image gatsby-plugin-sharp gatsby-source-filesystem gatsby-transformer-sharp`
-
-  [doc](https://www.gatsbyjs.com/docs/how-to/images-and-media/using-gatsby-plugin-image/)
-
-- (non fait) Installer les polices au choix :
-
-  `npm install @fontsource/$NOMDELAFONT`
-
-  [doc](https://github.com/fontsource/fontsource/tree/master/packages)
-
+[Fontsource docs](https://github.com/fontsource/fontsource#installation) | [Fontsource packages list](https://github.com/fontsource/fontsource/tree/master/packages)
