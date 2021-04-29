@@ -37,6 +37,8 @@ Certaines modifications sont à apporter afin de configurer ce starter (SEO, gat
 
 Vous pouvez localiser ces modifications en recherchant le mot-clé `TODO` grâce à une recherche globale (`ctrl maj F`) ou en utilisant une extension comme `Todo Tree` qui les répertorie automatiquement pour vous.
 
+⚠️ N'oubliez pas de modifier `package.json` également (les commentaires TODO ne peuvent pas être insérés dans ce fichier).
+
 # Installer des polices au choix
 
 Trouvez-la sur [Google Fonts](https://fonts.google.com/), installez-la puis importez-la dans le fichier d'entrée de l'app (ici `layout.js`) :
