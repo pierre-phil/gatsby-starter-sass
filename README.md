@@ -39,27 +39,31 @@ Vous pouvez localiser ces modifications en recherchant le mot-clé `TODO` grâce
 
 ⚠️ N'oubliez pas de modifier `package.json` également (les commentaires TODO ne peuvent pas être insérés dans ce fichier).
 
-# Installer des polices au choix
+# Polices avec `fontsource`
 
-Trouvez-la sur [Google Fonts](https://fonts.google.com/), installez-la puis importez-la dans le fichier d'entrée de l'app (ici `layout.js`) :
+`Fontsource` fournit des polices `Google Fonts` comme packages `npm`. Choisissez la police sur [Google Fonts](https://fonts.google.com/), vérifiez qu'elle est [bien présente sur fontsource](https://github.com/fontsource/fontsource/tree/master/packages) puis installez-la :
 
 `npm install @fontsource/open-sans`
 
-```
--- layout.js
-
-import "@fontsource/open-sans" // Defaults to weight 400 with normal variant.
-import "@fontsource/open-sans/500.css" // Weight 500.
-import "@fontsource/open-sans/900-italic.css" // Italic variant.
-```
-
-Les fonts peuvent aussi être importées dans un fichier SCSS :
+Pour l'utiliser, importer la font dans `gatsby-brower.js`. Elle peut ensuite être utilisée dans tout fichier `CSS`, `SCSS`, etc.
 
 ```
--- variable.scss
+-- gatsby-browser.js
 
-@import "~@fontsource/open-sans/index.css";
-@import "~@fontsource/open-sans/300-italic.css";
+import "@fontsource/open-sans" // Defaults to weight 400 with all styles included.
 ```
 
+```
+-- layout.scss
+
+body {
+  font-family: "Open Sans";
+}
+```
+
+Pour désinstaller la font utilisée dans ce repo :
+
+`npm uninstall @fontsource/open-sans`
+
+[Using web fonts - Gatsby](https://www.gatsbyjs.com/docs/how-to/styling/using-web-fonts/#self-host-google-fonts-with-fontsource) |
 [Fontsource docs](https://github.com/fontsource/fontsource#installation) | [Fontsource packages list](https://github.com/fontsource/fontsource/tree/master/packages)
