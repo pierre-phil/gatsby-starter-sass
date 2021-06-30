@@ -31,6 +31,7 @@ const SEO = ({ title, description, image, article }) => {
       title={seo.title}
       titleTemplate={titleTemplate}
       htmlAttributes={{
+        // TODO
         lang: "fr",
       }}
     >
