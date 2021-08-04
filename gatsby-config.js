@@ -41,15 +41,7 @@ module.exports = {
         display: `standalone`,
       },
     },
-    {
-      // https://www.gatsbyjs.com/plugins/gatsby-plugin-offline/#gatsby-plugin-offline
-      resolve: `gatsby-plugin-offline`,
-      options: {
-        precachePages: [`/index/`],
-        workboxConfig: {
-          globPatterns: [`src/images/dog.jpg`],
-        },
-      },
-    },
+    `gatsby-plugin-remove-serviceworker`,
+    `gatsby-plugin-netlify`,
   ],
 }
