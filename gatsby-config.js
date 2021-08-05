@@ -12,6 +12,7 @@ module.exports = {
     titleTemplate: "%s · Gatsby starter",
     description: "This is a default description",
     url: "https://www.doe.com", // No trailing slash allowed!
+    siteUrl: "https://www.doe.com",
     image: "/images/dog.jpg", // Path to your image you placed in the 'static' folder
     twitterUsername: "@pete_aly",
   },
@@ -43,5 +44,7 @@ module.exports = {
     },
     `gatsby-plugin-remove-serviceworker`,
     `gatsby-plugin-netlify`,
+    "gatsby-plugin-robots-txt",
+    `gatsby-plugin-sitemap`,
   ],
 }
