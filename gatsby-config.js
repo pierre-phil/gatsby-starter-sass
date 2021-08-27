@@ -13,7 +13,7 @@ module.exports = {
     description: "This is a default description",
     url: "https://www.doe.com", // No trailing slash allowed!
     siteUrl: "https://www.doe.com",
-    image: "/images/dog.jpg", // Path to your image you placed in the 'static' folder
+    image: "/banner.jpg", // Path to your image you placed in the 'static' folder
     twitterUsername: "@pete_aly",
   },
   flags: {
