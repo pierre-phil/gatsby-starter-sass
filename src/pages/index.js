@@ -7,7 +7,7 @@ import Seo from "../components/Seo"
 export default function Home() {
   return (
     <>
-      <Seo title="Accueil" />
+      <Seo title="Accueil" description="Ceci est apparemment une page d'accueil." index follow />
       <Layout>
         <Titles></Titles>
       </Layout>
