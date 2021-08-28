@@ -6,7 +6,7 @@ import { useStaticQuery, graphql } from "gatsby"
 
 // https://www.gatsbyjs.com/docs/add-seo-component/
 
-const SEO = ({ title, description, image, article }) => {
+const SEO = ({ title, description, image, article, index, follow }) => {
   const { pathname } = useLocation()
   const { site } = useStaticQuery(query)
 
@@ -64,7 +64,17 @@ const SEO = ({ title, description, image, article }) => {
 
       {seo.image && <meta name="twitter:image" content={seo.image} />}
       <link rel="canonical" href={seo.url}></link>
-    </Helmet>
+    
+      {/* https://stackoverflow.com/questions/66858464/prevent-gatsby-page-at-a-specific-domain-path-from-appearing-in-google-search */}
+
+      <meta
+        name="robots"
+        content={`${index ? `index` : `noindex`}, ${
+          follow ? `follow` : `nofollow`
+        }`}
+      />
+       
+       </Helmet>
   )
 }
 
