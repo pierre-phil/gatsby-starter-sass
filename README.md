@@ -67,3 +67,59 @@ Pour désinstaller la font utilisée dans ce repo :
 
 [Using web fonts - Gatsby](https://www.gatsbyjs.com/docs/how-to/styling/using-web-fonts/#self-host-google-fonts-with-fontsource) |
 [Fontsource docs](https://github.com/fontsource/fontsource#installation) | [Fontsource packages list](https://github.com/fontsource/fontsource/tree/master/packages)
+
+# Indexation des pages
+
+Ne pas oublier, pour chaque page du site, les props `index` et `follow` à passer au composant SEO.
+
+## Pour une page indexée
+
+`--- Seo.js`
+
+```
+<Seo
+    title="Accueil"
+    description="Ceci semble être une page d'accueil."
+    index
+    follow
+/>
+```
+
+## Pour une page non indexée
+
+`--- Seo.js`
+
+```
+<Seo
+    title="Mentions légales"
+    description="Page contenant les mentions légales."
+    index={false}
+    follow={false}
+/>
+```
+
+Attention, toute page non indexée doit également retirée du Sitemap (en utilisant le plugin `gatsby-plugin-sitemap`) :
+
+`--- gatsby-config.js`
+
+```
+module.exports = {
+    ...
+        plugins: [
+            ...
+            {
+                resolve: `gatsby-plugin-sitemap`,
+                options: { excludes: [`/mentions-legales/`] },
+            },
+            ...
+         ]
+    ...
+}
+```
+Enfin, tout lien pointant vers une page non-indexée devrait comporter l'attribut `rel="no-follow"` :
+
+```
+<Link to="/mentions-legales/" rel="no-follow">
+    Mentions légales
+</Link>
+```
