@@ -72,9 +72,9 @@ Pour désinstaller la font utilisée dans ce repo :
 
 Ne pas oublier, pour chaque page du site, les props `index` et `follow` à passer au composant SEO.
 
-## Pour une page indexée
+## Ex. pour une page indexée
 
-`--- Seo.js`
+`--- Index.js`
 
 ```
 <Seo
@@ -85,9 +85,9 @@ Ne pas oublier, pour chaque page du site, les props `index` et `follow` à passe
 />
 ```
 
-## Pour une page non indexée
+## Ex. pour une page non indexée
 
-`--- Seo.js`
+`--- MentionsLegales.js`
 
 ```
 <Seo
@@ -98,7 +98,7 @@ Ne pas oublier, pour chaque page du site, les props `index` et `follow` à passe
 />
 ```
 
-Attention, toute page non indexée doit également retirée du Sitemap (en utilisant le plugin `gatsby-plugin-sitemap`) :
+Attention, toute page non indexée doit également être retirée du `sitemap` (en utilisant le plugin `gatsby-plugin-sitemap`) :
 
 `--- gatsby-config.js`
 
