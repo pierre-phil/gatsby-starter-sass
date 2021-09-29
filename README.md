@@ -8,11 +8,23 @@ Installer les dépendances :
 
 `npm install`
 
-Changer l'adresse url remote :
+Changer l'url remote :
 
-`git remote set-url origin $url`
+`git remote set-url origin $SSH-url`
+
+Vérifier url remote :
+
+`git remote -v`
+
+Modifier `package.json` avec les infos du nouveau projet
+
+Fermer VSC et modifier le nom du dossier sur le disque
+
+Pousser les modifs
 
 Mettre à jour les dépendances (voir section suivante)
+
+Suivre les `TODO` pour modifier les paramètres du projet (voir deuxième section suivante)
 
 # Mise à jour des packages
 
