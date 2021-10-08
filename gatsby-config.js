@@ -1,3 +1,14 @@
+// Access .env files
+require("dotenv").config({
+  path: `.env`,
+  /* 
+  ! warn 
+  ! use :
+  path: `.env.${process.env.NODE_ENV}`,
+  ! to access a specific .env filename
+  */
+})
+
 /**
  * Configure your Gatsby site with this file.
  *
