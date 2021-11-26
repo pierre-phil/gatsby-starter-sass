@@ -6,7 +6,7 @@ import { useStaticQuery, graphql } from "gatsby"
 
 // https://www.gatsbyjs.com/docs/add-seo-component/
 
-const SEO = ({ title, description, image, article, index, follow }) => {
+const SEO = ({ title, description, image, index, follow }) => {
   const { pathname } = useLocation()
   const { site } = useStaticQuery(query)
 
@@ -40,7 +40,7 @@ const SEO = ({ title, description, image, article, index, follow }) => {
 
       {seo.url && <meta property="og:url" content={seo.url} />}
 
-      {(article ? true : null) && <meta property="og:type" content="article" />}
+      <meta property="og:type" content="website" />
 
       {seo.title && <meta property="og:title" content={seo.title} />}
 
